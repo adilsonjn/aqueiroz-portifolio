@@ -377,78 +377,103 @@
         </section>
 
 
+
         <section class="section projects-section" id="projetos">
             <div class="container">
                 <div class="projects-header reveal">
                     <div class="section-heading">
-                        <p class="eyebrow">PROJETOS & CASES</p>
-                        <h2>Experiências transformadas em documentação técnica.</h2>
+                        <p class="eyebrow">CASES TÉCNICOS</p>
+                        <h2>Problemas reais, abordagem técnica e resultado.</h2>
                     </div>
                     <p class="projects-intro">
-                        Projetos selecionados serão apresentados com contexto, arquitetura, tecnologias,
-                        decisões técnicas, implementação, validação e troubleshooting — sempre com dados
-                        sensíveis removidos ou anonimizados.
+                        Esta seção reúne experiências práticas em infraestrutura, redes e segurança.
+                        Cada case apresenta a necessidade recebida, a abordagem adotada, os principais
+                        tópicos técnicos e o resultado final, com dados sensíveis removidos.
                     </p>
                 </div>
 
-                <div class="projects-grid">
-                    <article class="project-card reveal">
-                        <div class="project-card-top">
-                            <span class="project-status">Em documentação</span>
-                            <span class="project-number">01</span>
+                <article class="case-featured reveal">
+                    <div class="case-featured-head">
+                        <div>
+                            <span class="project-status">Case real</span>
+                            <p class="project-category">Redes & Segurança</p>
+                            <h3>Recuperação e Reestruturação de Ambiente de Rede</h3>
                         </div>
-                        <p class="project-category">Redes & Segurança</p>
-                        <h3>Reestruturação de Rede & Wi-Fi</h3>
-                        <p>
-                            Segmentação de rede, VLANs, roteamento, acesso à internet, endurecimento de
-                            serviços de gerenciamento e preparação do ambiente para controle de acesso Wi-Fi.
-                        </p>
-                        <div class="project-tags">
-                            <span>MikroTik</span>
-                            <span>VLAN</span>
-                            <span>PPPoE</span>
-                            <span>UniFi</span>
-                        </div>
-                    </article>
+                        <span class="project-number">01</span>
+                    </div>
 
-                    <article class="project-card reveal">
-                        <div class="project-card-top">
-                            <span class="project-status">Em documentação</span>
-                            <span class="project-number">02</span>
+                    <div class="case-summary">
+                        <div class="case-block">
+                            <span class="case-label">Necessidade</span>
+                            <p>
+                                O cliente não possuía mais acesso administrativo aos equipamentos de rede
+                                e precisava recuperar a gestão do ambiente. Como objetivo adicional, também
+                                foi solicitada uma avaliação da infraestrutura Wi-Fi para possibilitar,
+                                futuramente, o gerenciamento e a comercialização de acessos para visitantes.
+                            </p>
                         </div>
-                        <p class="project-category">Microsoft & Identidade</p>
-                        <h3>Infraestrutura Microsoft & Acesso Remoto</h3>
-                        <p>
-                            Integração de Active Directory, DNS, políticas, compartilhamentos, autenticação
-                            e acesso remoto com foco em disponibilidade e troubleshooting de identidade.
-                        </p>
-                        <div class="project-tags">
-                            <span>Windows Server</span>
-                            <span>Active Directory</span>
-                            <span>DNS</span>
-                            <span>VPN</span>
-                        </div>
-                    </article>
 
-                    <article class="project-card reveal">
-                        <div class="project-card-top">
-                            <span class="project-status">Em documentação</span>
-                            <span class="project-number">03</span>
+                        <div class="case-block">
+                            <span class="case-label">Abordagem utilizada</span>
+                            <p>
+                                Foi realizado o levantamento dos equipamentos existentes e a recuperação do
+                                acesso administrativo. O roteador MikroTik foi restaurado e reconfigurado,
+                                permitindo reconstruir a arquitetura da rede com maior controle sobre
+                                segmentação, conectividade, serviços de gerenciamento e segurança.
+                            </p>
+                            <p>
+                                A partir disso, o trabalho evoluiu para segmentação lógica da rede,
+                                restabelecimento da conectividade com o provedor, revisão dos serviços
+                                administrativos, atualização dos equipamentos e reprovisionamento da
+                                infraestrutura Wi-Fi.
+                            </p>
                         </div>
-                        <p class="project-category">Backup & Continuidade</p>
-                        <h3>Backup, Retenção & Recuperação</h3>
-                        <p>
-                            Estruturação e análise de rotinas de backup para máquinas virtuais e arquivos,
-                            incluindo retenção, full backups, replicação e investigação de falhas.
-                        </p>
-                        <div class="project-tags">
-                            <span>Veeam</span>
-                            <span>VM Backup</span>
-                            <span>File Share</span>
-                            <span>Recovery</span>
+                    </div>
+
+                    <div class="case-details-grid">
+                        <div class="case-block case-topics">
+                            <span class="case-label">Principais tópicos abordados</span>
+                            <div class="project-tags">
+                                <span>MikroTik RouterOS</span>
+                                <span>VLANs</span>
+                                <span>DHCP</span>
+                                <span>PPPoE</span>
+                                <span>NAT</span>
+                                <span>DNS</span>
+                                <span>Firewall</span>
+                                <span>Hardening</span>
+                                <span>Switch Gerenciável</span>
+                                <span>UniFi APs</span>
+                                <span>Wi-Fi Visitantes</span>
+                            </div>
                         </div>
-                    </article>
-                </div>
+
+                        <div class="case-block">
+                            <span class="case-label">Solução implementada</span>
+                            <p>
+                                Foram criadas redes separadas para gerenciamento e visitantes, com DHCP
+                                independente e acesso à internet. A autenticação PPPoE do provedor passou a
+                                ser realizada diretamente pelo roteador, juntamente com NAT e DNS.
+                            </p>
+                            <p>
+                                Os serviços administrativos do MikroTik foram revisados e restringidos à
+                                rede de gerenciamento. O switch recebeu configuração administrativa e
+                                atualização de firmware, enquanto os access points UniFi foram restaurados,
+                                atualizados e reprovisionados para devolver ao cliente o controle do ambiente.
+                            </p>
+                        </div>
+
+                        <div class="case-block case-result">
+                            <span class="case-label">Resultado final</span>
+                            <p>
+                                Gestão dos equipamentos recuperada, rede reorganizada e segmentada, acesso à
+                                internet restabelecido, superfície administrativa reduzida e infraestrutura
+                                Wi-Fi preparada para evolução futura com gerenciamento centralizado e
+                                controle de acesso para visitantes.
+                            </p>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
 

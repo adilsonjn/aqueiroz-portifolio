@@ -63,3 +63,18 @@ if ("IntersectionObserver" in window) {
 } else {
     reveals.forEach((element) => element.classList.add("visible"));
 }
+
+
+const technologyLogos = document.querySelectorAll(".logo-item img");
+
+technologyLogos.forEach((image) => {
+    const markFailed = () => {
+        image.closest(".logo-item")?.classList.add("logo-load-failed");
+    };
+
+    image.addEventListener("error", markFailed);
+
+    if (image.complete && image.naturalWidth === 0) {
+        markFailed();
+    }
+});

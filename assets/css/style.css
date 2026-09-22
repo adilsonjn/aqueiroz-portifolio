@@ -1335,3 +1335,8 @@ ul {
         flex-direction: column;
     }
 }
+
+
+.case-featured + .case-featured {
+    margin-top: 28px;
+}

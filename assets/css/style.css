@@ -827,7 +827,7 @@ ul {
 
 .contact-actions-grid {
     display: grid;
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(2, max-content);
     justify-content: end;
     align-items: center;
     gap: 12px;

@@ -1,36 +1,23 @@
 # aqueiroz-portifolio
 
-Portfólio profissional de **Adilson Queiroz**, com foco em **Infraestrutura, Redes e Segurança**.
+Portfólio profissional de **Adilson Junio Barreto Queiroz**, com foco em **Infraestrutura, Redes e Segurança**.
 
-## Escopo da versão inicial
+## Conteúdo
 
-A primeira versão foi estruturada para apresentar o perfil profissional antes da publicação de laboratórios e projetos técnicos completos.
+O site apresenta:
 
-Ela inclui:
-
-- apresentação profissional;
-- áreas de atuação;
-- competências técnicas organizadas por domínio;
-- stack de tecnologias;
-- abordagem de troubleshooting e causa raiz;
-- roadmap dos próximos conteúdos;
-- acesso ao perfil no GitHub.
-
-## Próximas fases
-
-Os próximos conteúdos previstos são:
-
-- Enterprise Network Lab;
-- Microsoft Infrastructure Lab;
-- Backup & Recovery;
-- Troubleshooting Cases.
-
-Os projetos serão publicados posteriormente com dados sanitizados, documentação técnica, arquitetura, implementação, validação e troubleshooting.
+- resumo profissional;
+- áreas de atuação e competências técnicas;
+- tecnologias e plataformas presentes na atuação profissional;
+- metodologia de trabalho;
+- cases técnicos e consultorias;
+- canais de contato profissional.
 
 ## Estrutura
 
 ```text
 .
+├── CNAME
 ├── index.html
 ├── README.md
 └── assets/
@@ -42,4 +29,6 @@ Os projetos serão publicados posteriormente com dados sanitizados, documentaç�
 
 ## Publicação
 
-O site é publicado pelo GitHub Pages. A versão estável permanece na branch `main`.
+A versão de produção é mantida na branch `main` e publicada via GitHub Pages no domínio:
+
+**https://www.aqueiroz-portifolio.com.br/**

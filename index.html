@@ -474,6 +474,97 @@
                         </div>
                     </div>
                 </article>
+
+                <article class="case-featured reveal">
+                    <div class="case-featured-head">
+                        <div>
+                            <span class="project-status">Case real</span>
+                            <p class="project-category">Infraestrutura & Virtualização</p>
+                            <h3>Modernização e Centralização de Infraestrutura Corporativa</h3>
+                        </div>
+                        <span class="project-number">02</span>
+                    </div>
+
+                    <div class="case-summary">
+                        <div class="case-block">
+                            <span class="case-label">Necessidade</span>
+                            <p>
+                                O ambiente possuía compartilhamentos de arquivos descentralizados entre
+                                estações, além de uma aplicação de gestão hospedada em um computador utilizado
+                                como servidor. Esse modelo dificultava a administração, aumentava o risco de
+                                perda de arquivos e tornava a gestão de backups pouco previsível.
+                            </p>
+                        </div>
+
+                        <div class="case-block">
+                            <span class="case-label">Abordagem utilizada</span>
+                            <p>
+                                Foi proposto um projeto de modernização baseado em centralização dos serviços,
+                                virtualização e separação de funções críticas. A nova arquitetura passou a
+                                concentrar identidade, arquivos, aplicação e backup em máquinas virtuais
+                                dedicadas, reduzindo dependências entre estações e facilitando a administração.
+                            </p>
+                            <p>
+                                Paralelamente, a infraestrutura de rede foi reorganizada com um MikroTik na
+                                borda, responsável pela conectividade com o provedor, segmentação do ambiente
+                                e acesso remoto por VPN.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="case-details-grid">
+                        <div class="case-block case-topics">
+                            <span class="case-label">Principais tópicos abordados</span>
+                            <div class="project-tags">
+                                <span>Windows Server</span>
+                                <span>Active Directory</span>
+                                <span>GPO</span>
+                                <span>SMB</span>
+                                <span>Shadow Copy</span>
+                                <span>Virtualização</span>
+                                <span>Veeam Backup</span>
+                                <span>MikroTik</span>
+                                <span>Segmentação</span>
+                                <span>PPPoE</span>
+                                <span>VPN L2TP</span>
+                                <span>Site-to-Site</span>
+                            </div>
+                        </div>
+
+                        <div class="case-block">
+                            <span class="case-label">Solução implementada</span>
+                            <p>
+                                O servidor físico passou a hospedar quatro VMs com funções separadas:
+                                Active Directory para gerenciamento de usuários, computadores e GPOs;
+                                servidor de arquivos com compartilhamentos SMB, organização por setor,
+                                volumes separados e Shadow Copy; servidor dedicado à aplicação de gestão;
+                                e servidor de backup com Veeam.
+                            </p>
+                            <p>
+                                O Veeam passou a centralizar a proteção das máquinas virtuais e dos
+                                repositórios de arquivos e da aplicação. Na borda, o MikroTik assumiu a
+                                discagem PPPoE, a segmentação entre estações e servidores e o serviço de
+                                VPN L2TP para acesso remoto de colaboradores e manutenção.
+                            </p>
+                            <p>
+                                A arquitetura também foi preparada para expansão futura, permitindo a
+                                integração de novas unidades por meio de túneis VPN entre sites.
+                            </p>
+                        </div>
+
+                        <div class="case-block case-result">
+                            <span class="case-label">Resultado final</span>
+                            <p>
+                                O ambiente deixou de depender de compartilhamentos e serviços distribuídos
+                                entre estações e passou a operar sobre uma infraestrutura centralizada,
+                                segmentada e administrável. Identidade, arquivos, aplicação e backups ficaram
+                                isolados por função, com melhor controle de acesso, recuperação de dados,
+                                continuidade operacional e possibilidade de expansão para novas unidades.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </section>
 

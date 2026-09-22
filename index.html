@@ -582,9 +582,10 @@
                             <p>
                                 O cliente já utilizava diferentes ferramentas para proteção de dados,
                                 incluindo Iperius Backup, Cobian Backup e recursos nativos do Windows.
-                                Apesar de existirem rotinas de backup, a diversidade de soluções dificultava
-                                o gerenciamento centralizado, a padronização das políticas de retenção e o
-                                acompanhamento das execuções.
+                                O principal desafio não era apenas a falta de centralização: a execução e o
+                                acompanhamento de todas as rotinas consumiam bastante tempo operacional, e
+                                o gerenciamento de backups em hosts distribuídos por diferentes redes era
+                                limitado e pouco prático no modelo existente.
                             </p>
                         </div>
 
@@ -593,14 +594,16 @@
                             <p>
                                 A consultoria iniciou pela análise do cenário existente e pela apresentação
                                 do Veeam Backup & Replication como plataforma central para consolidação das
-                                rotinas de proteção. A proposta foi estruturar uma estratégia única de
-                                backup, com processos previsíveis, administração centralizada e maior
-                                visibilidade sobre os jobs executados.
+                                rotinas de proteção. A proposta foi reduzir o esforço operacional, padronizar
+                                a execução dos backups e permitir que hosts presentes em redes distintas
+                                pudessem ser gerenciados a partir de uma única plataforma.
                             </p>
                             <p>
-                                A implantação foi acompanhada tecnicamente, desde a preparação do ambiente
-                                até a configuração dos hosts, repositórios, jobs, políticas de retenção,
-                                replicação e automações.
+                                A arquitetura baseada em agentes permitiu proteger hosts alcançáveis em nível
+                                de rede, inclusive através de conexões VPN, desde que existisse conectividade
+                                direta e os requisitos de comunicação estivessem atendidos. A implantação foi
+                                acompanhada tecnicamente desde a preparação do ambiente até a configuração dos
+                                hosts, repositórios, jobs, políticas de retenção, replicação e automações.
                             </p>
                         </div>
                     </div>
@@ -619,6 +622,8 @@
                                 <span>VM Backup</span>
                                 <span>File Backup</span>
                                 <span>Monitoring</span>
+                                <span>Agent-based Backup</span>
+                                <span>VPN-connected Hosts</span>
                             </div>
                         </div>
 
@@ -626,14 +631,16 @@
                             <span class="case-label">Solução implementada</span>
                             <p>
                                 A consultoria contemplou orientação e acompanhamento na configuração dos
-                                hosts protegidos, definição das unidades destinadas ao armazenamento dos
+                                hosts protegidos, inclusive equipamentos localizados em outras redes com
+                                conectividade via VPN, definição das unidades destinadas ao armazenamento dos
                                 backups, criação e organização dos repositórios e construção das rotinas de
                                 backup e replicação.
                             </p>
                             <p>
                                 Também foram definidas políticas de retenção, agendas de execução,
-                                encadeamento e automação das rotinas, além da organização do monitoramento
-                                dos jobs para facilitar a administração contínua do ambiente.
+                                encadeamento e automação das rotinas, reduzindo a necessidade de intervenções
+                                manuais e o tempo gasto no ciclo operacional de backup. O acompanhamento dos
+                                jobs passou a ser feito de forma centralizada no Veeam.
                             </p>
                         </div>
 
@@ -643,7 +650,8 @@
                                 A estratégia de proteção de dados foi consolidada em uma única plataforma.
                                 O ambiente passou a contar com rotinas padronizadas de backup e replicação,
                                 políticas de retenção definidas, execução automatizada e gerenciamento
-                                centralizado através do Veeam Backup & Replication.
+                                centralizado de hosts locais e remotos através do Veeam Backup & Replication,
+                                reduzindo o tempo operacional necessário para administrar e acompanhar os backups.
                             </p>
                         </div>
                     </div>

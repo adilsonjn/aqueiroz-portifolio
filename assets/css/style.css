@@ -687,6 +687,12 @@ ul {
     opacity: 1;
 }
 
+.logo-item img.logo-wide {
+    width: 88px;
+    height: 40px;
+    padding: 6px 8px;
+}
+
 .logo-item.logo-load-failed::before {
     content: attr(data-fallback);
     display: grid;

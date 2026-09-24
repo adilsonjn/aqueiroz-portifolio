@@ -693,6 +693,14 @@ ul {
     padding: 6px 8px;
 }
 
+.logo-item img.logo-microsoft {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    object-fit: contain;
+    object-position: center;
+}
+
 .logo-item.logo-load-failed::before {
     content: attr(data-fallback);
     display: grid;

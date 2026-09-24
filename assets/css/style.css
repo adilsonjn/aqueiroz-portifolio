@@ -678,10 +678,13 @@ ul {
 }
 
 .logo-item img {
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
     object-fit: contain;
-    opacity: 0.9;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.94);
+    opacity: 1;
 }
 
 .logo-item.logo-load-failed::before {
@@ -1047,8 +1050,8 @@ ul {
     }
 
     .logo-item img {
-        width: 29px;
-        height: 29px;
+        width: 36px;
+        height: 36px;
     }
 
     .logo-item span {
